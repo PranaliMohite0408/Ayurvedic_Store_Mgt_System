@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{21838F76-623D-4E87-9D3E-883B4BE9197A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ayurvedic_Store_Management_System</RootNamespace>
+    <AssemblyName>Ayurvedic_Store_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayurvedic_Store_Management_System_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayurvedic_Store_Management_System_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ayurvedic_Store_Management_System_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Add_New_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_New_Customer.Designer.cs">
+      <DependentUpon>Add_New_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Category.Designer.cs">
+      <DependentUpon>frm_Add_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Product.Designer.cs">
+      <DependentUpon>frm_Add_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Add_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Stock.Designer.cs">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Distributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Distributor.Designer.cs">
+      <DependentUpon>frm_Distributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update_Product.Designer.cs">
+      <DependentUpon>frm_Update_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Customer.Designer.cs">
+      <DependentUpon>frm_View_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Product.Designer.cs">
+      <DependentUpon>frm_View_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Vars.cs" />
+    <Compile Include="MDI_Ayurvedic_Store_Management_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_Ayurvedic_Store_Management_System.Designer.cs">
+      <DependentUpon>MDI_Ayurvedic_Store_Management_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add_New_Customer.resx">
+      <DependentUpon>Add_New_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Category.resx">
+      <DependentUpon>frm_Add_Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Product.resx">
+      <DependentUpon>frm_Add_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Stock.resx">
+      <DependentUpon>frm_Add_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Distributor.resx">
+      <DependentUpon>frm_Distributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update_Product.resx">
+      <DependentUpon>frm_Update_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Customer.resx">
+      <DependentUpon>frm_View_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Product.resx">
+      <DependentUpon>frm_View_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_Ayurvedic_Store_Management_System.resx">
+      <DependentUpon>MDI_Ayurvedic_Store_Management_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet.xsc">
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayurvedic_Store_Management_System_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet.xss">
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet1.xsc">
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayurvedic_Store_Management_System_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet1.xss">
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet2.xsc">
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ayurvedic_Store_Management_System_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ayurvedic_Store_Management_System_DBDataSet2.xss">
+      <DependentUpon>Ayurvedic_Store_Management_System_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
